@@ -46,7 +46,9 @@ document.addEventListener('DOMContentLoaded', async ()=>{
             id = params.get('id');
 
     try{
-        const bookData = await fetchData(`https://openlibrary.org${id}.json`);
+        const bookData = await fetchData(`https://openlibrary.org${id}.json`, {
+            mode: 'no-cors',
+        });
 
         if(bookData[0] === null){
             displayError(bookData[2]);
