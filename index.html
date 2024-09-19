@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+            <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+            <title>Librery</title>
+        </head>
+        <body>
+            
+            <header>
+                <div class="preNav">
+                    <h6> <span class="cursive">Welcome</span> to</h6>
+                        <h1>Librery</h1>
+                    <div style="max-width: 70vw; text-wrap: wrap; text-align: center; color:white;"><p>Discover the ultimate destination for all your reading needs, where you’ll find an extensive selection of books, expert recommendations, and everything else to satisfy your literary cravings.</p></div>
+                </div>
+                <nav>
+                    <div class="logo" style="margin-left: 5vmax;"><a href="index.html" style="color: white; text-decoration: none;">Librery</a><i class="fa fa-home"></i></div>
+
+                    <div>
+                        <a href="#search" style="margin-left: 9vmax; text-decoration: none; color: white;"><span style="font-size: 1.3rem;">search</span><i class="fa fa-search" style="font-size: 1rem;"></i></a>
+                    </div>
+
+                    <div>
+                        <div class="dropdown">
+                            <span>Categories&#9660;</span>
+                            
+                            <div class="dropdown-content"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <h1> <span class="inline-logo" style="font-size: 4rem;">Librery</span> is your number 1 destination for of your reading needs </h1>
+                <p>Are you tired of sifting through endless book lists and obscure search engines to find the perfect read? Meet Librery—the front-end service designed to make book discovery as seamless and intuitive as flipping through the pages of your favorite novel.</p>
+                <h2 style="font-size: 4rem;">Why <span class="inline-logo">Librery</span>?</h2>
+
+                <ul>
+                    <li><strong>Effortless Searching</strong>: Librery transforms the complex task of book searching into a smooth, streamlined experience. Whether you're hunting for a best-seller by name or exploring a genre, Librery’s powerful search engine taps into thousands of books with lightning speed and pinpoint accuracy.</li>
+                    <li><strong>Categorized Convenience</strong>: Dive deep into any category and discover books that match your interests. From the latest science fiction thrillers to timeless classics, Librery’s intuitive filters and categories make it easy to find exactly what you’re looking for, without the hassle.</li>
+                    <li><strong>Comprehensive Coverage</strong>: Built on the robust Open Library API, Librery provides access to an extensive database of books, authors, and publications. Whether you’re a casual reader or a passionate bibliophile, our platform ensures you have the most comprehensive and up-to-date information at your fingertips.</li>
+                    <li><strong>User-Friendly Interface</strong>: Our clean, modern design ensures a pleasant browsing experience. With just a few clicks, you can explore detailed book descriptions, read reviews, and even get recommendations tailored to your reading preferences.</li>
+                    <li><strong>Stay Ahead of Trends</strong>: Keep up with the latest releases and discover hidden gems with Librery’s dynamic and up-to-date listings. Our platform helps you stay in the know and makes finding new books an exciting adventure.</li>
+                </ul>
+            </main>
+
+            <footer id="search">
+                    <h1 id="search-tag">Search Through <span class="colorShift">THOUSANDS</span> of Books!</h1>
+                    <div>
+                        <input type="text" id="searchInput" placeholder="Press 'Enter' to Search"/>
+                        <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
+                    </div>
+                    
+                </div>
+            </footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+            <script src="js/mainScript.js"></script>
+        </body>
+    </html>
