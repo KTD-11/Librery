@@ -23,7 +23,6 @@ function createBookElements(bookNameP, authorNameP, bookDescriptionP){
     downloadButton.innerHTML = `Preview`;
         downloadButton.className = `downloadButton`;
             subjectContainer.className = `subjectContainer`;
-    bookTitle.className = 'bookTitle';
 
     alphaContainer.className = 'alphaContainer';
 
