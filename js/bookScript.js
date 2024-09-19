@@ -53,8 +53,16 @@ document.addEventListener('DOMContentLoaded', async ()=>{
         }
 
         else{
-            const actualDescription = (typeof bookData[0].description === 'object' && bookData[0].description !== null) ? bookData[0].description.value : bookData[0].description;
 
+            let actualDescription;
+            
+            if(bookData[0].description){
+                actualDescription = (typeof bookData[0].description === 'object' && bookData[0].description !== null) ? bookData[0].description.value : bookData[0].description;                
+            }
+            else{
+                actualDescription = `Couldn't find a description for this book`
+            }
+            
             const bookFragments = createBookElements(
                 bookData[0].title,
                 author,
