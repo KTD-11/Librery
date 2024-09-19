@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
 
             let actualDescription;
             
-            if(!bookData[0].description){
+            if(bookData[0].description?){
                 actualDescription = (typeof bookData[0].description === 'object' && bookData[0].description !== null) ? bookData[0].description.value : bookData[0].description;                
             }
             else{
