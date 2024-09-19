@@ -359,7 +359,7 @@ input:hover, input:focus {
 }
 
 @media screen and (max-width: 580px) {
-  header h1, .bbody h1 {
+  header h1, .bookTitle {
     font-size: 4rem;
   }
   nav {
@@ -373,7 +373,7 @@ input:hover, input:focus {
   }
 }
 @media screen and (max-width: 280px) {
-  header h1, .bbody h1{
+  header h1, .bookTitle{
     font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
