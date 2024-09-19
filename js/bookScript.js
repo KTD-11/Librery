@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
             body.appendChild(bookFragments[6]);
 
             bookFragments[7].addEventListener('click', ()=>{
-                window.location.href = `https://openlibrary.org/work/${id}`
+                window.location.href = `https://openlibrary.org/${id}`
             });
         }
     }
