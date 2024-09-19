@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
             id = params.get('id');
 
     try{
-        const bookData = await fetchData(`https://openlibrary.org/works/${id}.json`);
+        const bookData = await fetchData(`https://openlibrary.org${id}.json`);
 
         if(bookData[0] === null){
             displayError(bookData[2]);

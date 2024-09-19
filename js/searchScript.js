@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
                         mainParent.appendChild(bookFragments[0]);
 
                         bookFragments[0].addEventListener('click', ()=>{
-                            const bookID = params.has('genre') ? book.lending_edition : book.key.split('/')[2]
+                            const bookID = book.key
 
                             window.location.href = `book.html?id=${bookID}&author=${authors.split(',')[0]}`
                         });
